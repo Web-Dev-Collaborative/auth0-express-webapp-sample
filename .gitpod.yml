@@ -7,7 +7,7 @@ tasks:
     init: |
       npm i
     command: |
-      echo "BASE_URL=$(gp url 3000)" > .env
+      echo "BASE_URL=http://localhost:3000" > .env
       echo "SECRET=$(openssl rand -hex 32)" >> .env
       echo "CLIENT_ID=$(echo $AUTH0_CLIENT_ID)" >> .env
       echo "ISSUER_BASE_URL=$(echo $AUTH0_TENANT_URL)" >> .env
